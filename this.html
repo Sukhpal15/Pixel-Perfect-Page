@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="e-commerce">
+    <meta name="description" content="This is a responsive checkout process page">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body class="font-jost">
+    <!-- header -->
+    <header class="bg-gray-50 border-b-2 pt-10 pb-5 sticky top-0 z-10">
+        <nav class="container mx-auto ">
+            <ul class="flex justify-center space-x-10 
+            lg:mt-5 lg:space-x-64 md:space-x-36">
+                <!-- li 1 -->
+                <li class="relative after:content-[''] after:h-0.5 after:bg-blue-600 after:absolute after:top-[48%] after:left-full after:w-10 md:after:w-36
+                    lg:after:w-64">
+                    <span class="hidden text-lg font-semibold  text-blue-600 absolute -top-2 -translate-y-8 -translate-x-5 
+                        lg:block">Summary</span>
+                    <a href="#" aria-label="li-1">
+                        <svg class="w-7 h-7 text-blue-600 after:content-['']" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M160 256C160 202.1 202.1 160 256 160C309 160 352 202.1 352 256C352 309 309 352 256 352C202.1 352 160 309 160 256zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+
+                <!-- li 2 -->
+                <li class="relative after:content-[''] after:h-0.1  after:border-gray-400 after:border after:border-dashed after:absolute after:top-[48%] after:left-full  after:w-10 md:after:w-36
+                    lg:after:w-64">
+                    <span class="w-max hidden text-lg  text-gray-600 absolute -top-2 -translate-y-8 left-0 -translate-x-14 
+                        lg:block">Contact Information</span>
+                    <a href="#" aria-label="li-2">
+                        <svg class="w-7 h-7 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                        </svg>
+                    </a>
+                </li>
+
+                <!-- li 3 -->
+                <li class="relative after:content-['']  after:h-0.1  after:border-gray-400 after:border after:border-dashed after:absolute after:top-[48%] after:left-full after:w-10 md:after:w-36
+                    lg:after:w-64">
+                    <span class="hidden w-max   text-lg  text-gray-600 absolute -top-2 -translate-y-8 left-0 -translate-x-14 
+                        lg:block">Payment Information</span>
+                    <a href="#" aria-label="li-3">
+                        <svg class="w-7 h-7 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                        </svg>
+                    </a>
+                </li>
+
+                <!-- li 4 -->
+                <li class="relative">
+                    <span class="hidden  text-lg text-gray-600 md:absolute -top-2 -translate-y-8 left-0 -translate-x-4 
+                        lg:block">Review</span>
+                    <a href="#" aria-label="li-4">
+                        <svg class="w-7 h-7 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <form action="/">
+                <ul>
+                    <li>
+                        <section class="container mx-auto border-2 p-4 mt-8 rounded-lg shadow-sm ">
+
+                            <!-- image and heading  -->
+                            <div class="flex gap-8 lg:flex-row flex-col">
+                                <div class="flex-none max-w-lg mx-auto">
+                                    <img class="h-full w-full object-cover rounded-lg" src="images/unnamed.png"
+                                        alt="diamond">
+                                </div>
+                                <!-- col 2 -->
+                                <div class="flex-1 overflow-hidden space-y-4">
+                                    <header>
+                                        <!-- h2 and remove  -->
+                                        <div class="flex text-gray-600 justify-between gap-3">
+                                            <h2 class="font-medium text-lg">Oval French Cut Halo Engagement Set In 14K
+                                                White Gold With A 1.00 Ct. H-Color VS2-Clarity Emerald Cut Diamond</h2>
+                                            <button type="button" class="flex gap-1" aria-label="crx">
+                                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd"
+                                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                                <span class=" md:block hidden">Remove</span>
+                                            </button>
+                                        </div>
+
+                                        <!-- Item and $1258  -->
+                                        <div class=" flex flex-col">
+                                            <span class="text-gray-500 my-1">Item#:RB1077-WG14</span>
+                                            <span class="text-2xl font-semibold">$1,258.78</span>
+                                        </div>
+                                    </header>
+                                    <div>
+                                        <!-- Ring Size Quantity and add center store  -->
+                                        <div class="flex gap-8 flex-wrap text-gray-700 text-sm">
+                                            <!-- Ring Size  -->
+                                            <div class="flex flex-col space-y-2">
+                                                <label for="select" class="font-medium ">Ring size</label>
+                                                <select name="selectt" class="border-2 p-1 w-52 h-10" id="select">
+                                                    <option value="select_size">Select Size</option>
+                                                    <option value="sm">Small</option>
+                                                    <option value="md">Medium</option>
+                                                    <option value="lg">Large</option>
+                                                </select>
+                                            </div>
+                                            <!-- Quantity  -->
+                                            <div class="space-y-2">
+                                                <label for="plus-minus" class="font-medium ">Quantity</label>
+                                                <!-- button div  -->
+                                                <div
+                                                    class="flex justify-between items-center gap-3 border-2 w-24 h-10 px-2">
+                                                    <button type="button" aria-label="add"> <svg class="w-4 h-4"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                            aria-hidden="true">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                d="M19.5 12h-15">
+                                                            </path>
+                                                        </svg></button>
+                                                    <input type="number" value="1" class="w-2" id="plus-minus">
+                                                    <button type="button" aria-label="subtract"><svg class="w-4 h-4"
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                            fill="currentColor" aria-hidden="true">
+                                                            <path fill-rule="evenodd"
+                                                                d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+                                                                clip-rule="evenodd"></path>
+                                                        </svg></button>
+                                                </div>
+
+                                            </div>
+                                            <!-- center store  -->
+                                            <fieldset class=" space-y-4">
+                                                <legend class=" font-medium">Would You Like To Add Center Stone?
+                                                </legend>
+                                                <!-- label and radio  -->
+                                                <div class="flex gap-10 mt-3 text-sm font-semibold items-center">
+                                                    <div class="flex items-center gap-1">
+                                                        <input type="radio" class="w-4 h-4 mr-1" name="Center" id="yes"
+                                                            checked>
+                                                        <label for="yes">Yes</label>
+                                                    </div>
+                                                    <div class="flex items-center gap-1">
+                                                        <input type="radio" name="Center" class="w-4 h-4 mr-1" id="no">
+                                                        <label for="no">No</label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <!-- Select Protection Plans  -->
+                                        <fieldset class="mt-5">
+                                            <!-- select protection plan heading and svg  -->
+                                            <legend class="flex gap-1.5">
+                                                <h3 class=" font-medium text-gray-600">Select Protection Plans</h3>
+                                                <svg class="w-5 h-6 cursor-pointer text-blue-700"
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                                </svg>
+                                            </legend>
+                                            <p class="text-sm mt-1 text-gray-500">Enjoy peace of mind with a Care Plan
+                                                from
+                                                jeweller's
+                                                Mutual</p>
+
+
+                                            <!-- 3 buttons  -->
+                                            <div class="mt-3 flex flex-wrap border md:w-max text-sm">
+                                                <!-- button 1  -->
+                                                <div class="border-b-2 flex w-full 
+                                md:border-r md:flex-1 md:border-b-0">
+                                                    <input type="radio" name="active" class="hidden peer/blue" id="blue"
+                                                        checked>
+                                                    <label for="blue" class="relative h-10 w-full md:w-44 flex justify-center items-center text-gray-500  
+                     peer-checked/blue:bg-blue-600 peer-checked/blue:text-white"><svg
+                                                            class="absolute w-4 h-4 text-white left-8 md:left-10"
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                                            fill="currentColor">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                                                fill="currentColor"></path>
+                                                        </svg>No Plan</label>
+
+                                                </div>
+                                                <!-- button 2  -->
+                                                <div class="w-full border-b-2 flex 
+                                md:flex-1 md:border-r md:border-b-0">
+                                                    <input type="radio" name="active" class="hidden peer/blue2"
+                                                        id="blue2">
+                                                    <label for="blue2" class="relative h-10 w-full md:w-44 flex justify-center items-center  text-gray-500
+                        peer-checked/blue2:bg-blue-600 peer-checked/blue2:text-white"><svg
+                                                            class="w-4 h-4 absolute left-8 md:left-2 text-white "
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                                            fill="currentColor">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                                                fill="currentColor"></path>
+                                                        </svg> 3 years <span class="ml-5">$180.00</span></label>
+                                                </div>
+                                                <!-- button 3  -->
+                                                <div class="flex w-full 
+                                md:flex-1">
+                                                    <input type="radio" id="bluee3" name="active"
+                                                        class="hidden peer/blue3">
+                                                    <label for="bluee3" class="relative h-10 w-full md:w-44 flex justify-center items-center text-gray-500
+                               peer-checked/blue3:bg-blue-600 peer-checked/blue3:text-white"><svg
+                                                            class="w-4 h-4 text-white absolute left-8 md:left-2"
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                                            fill="currentColor">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                                                fill="currentColor"></path>
+                                                        </svg>Lifetime <span class="ml-4">$425.00</span></label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <!-- engraving  -->
+                                        <div class="mt-3 flex gap-1">
+                                            <p class=" text-sm font-medium text-gray-600">Want to add
+                                                engraving?</p>
+                                            <div class="text-sm">
+                                                <button type="button" class="text-blue-600 flex  items-center"
+                                                    aria-label="pl_us" id="modal">
+                                                    <svg class="w-4 h-4 mx-1.5" fill="currentColor"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                        <path
+                                                            d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z">
+                                                        </path>
+                                                    </svg>
+                                                    Add Engraving
+                                                    <span class="font-semibold ml-1.5">$30.00</span></button>
+
+
+                                            </div>
+                                        </div>
+                                        <span class="md:hidden">false</span>
+                                    </div>
+                                    <!-- matching items  -->
+                                    <article>
+                                        <h3 class=" font-medium text-gray-600 mb-3">Matching Items</h3>
+                                        <div class=" relative">
+                                            <div
+                                                class="absolute inset-0 w-8 bg-gradient-to-r from-black/20 to-transparent">
+                                                <button type="button" class="absolute left-1 bottom-8 lg:bottom-12"
+                                                    aria-label="arr_left">
+                                                    <svg class="w-9 h-9  text-white bg-gray-800 rounded-full"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor">
+                                                        <g>
+                                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                                            <path
+                                                                d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z">
+                                                            </path>
+                                                        </g>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <ul class="flex gap-2 overflow-x-auto">
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Product_image_1">
+                                                </li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Product_image_2">
+                                                </li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Product_image_3">
+                                                </li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Product_image_4">
+                                                </li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Product_image_5">
+                                                </li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Product_image_6">
+                                                </li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Product_image_7">
+                                                </li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Product_image_8">
+                                                </li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Product_image_9">
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="absolute left-auto inset-0 w-8 bg-gradient-to-l from-black/20 to-transparent">
+                                                <button type="button" class="absolute right-1 bottom-8 lg:bottom-12"
+                                                    aria-label="ar-right">
+                                                    <svg class="w-9 h-9 text-white bg-gray-800 rounded-full"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor">
+                                                        <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <!-- 2 boxes -->
+                            <ul class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
+                                <li class="relative">
+                                    <div class=" flex items-start  border p-3 justify-between rounded-md peer/cross"
+                                        id="cross">
+                                        <div class="flex items-center gap-4">
+                                            <!-- img  -->
+                                            <div class="w-16 md:w-20 h-20">
+                                                <img src="images/product-01.jpg" class="w-full h-full object-cover"
+                                                    alt="appraisel-1">
+                                            </div>
+                                            <!-- content  -->
+                                            <div class="flex  flex-col gap-2 mt-3">
+                                                <h4 class="text-gray-700 font-medium">Complimentary Appraisal</h4>
+                                                <span class="text-sm text-gray-600">Item #: RB1077-WG14</span>
+                                            </div>
+                                        </div>
+                                        <!-- price  -->
+                                        <div class="mt-3">
+                                            <span class="font-semibold">$00.00</span>
+                                        </div>
+                                    </div>
+                                    <button type="button"
+                                        class="hidden peer-hover/cross:block absolute -top-3 -right-3"><svg
+                                            class="w-7 h-7 text-gray-700" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+
+                                </li>
+
+                                <li class="relative">
+                                    <div class=" flex items-start border p-3 justify-between rounded-md peer/cross2"
+                                        id="cross2">
+                                        <div class="flex items-center item gap-4">
+                                            <!-- img  -->
+                                            <div class="w-16 md:w-20 h-20">
+                                                <img src="images/product-01.jpg" class="h-full w-full object-cover"
+                                                    alt="appraisel-2">
+                                            </div>
+                                            <!-- content  -->
+                                            <div class="flex flex-col gap-2 mt-3">
+                                                <h4 class="text-gray-700 font-medium">Complimentary Appraisal</h4>
+                                                <span class="text-sm text-gray-600">Item #: RB1077-WG14</span>
+                                            </div>
+                                        </div>
+                                        <!-- price  -->
+                                        <div class="mt-3">
+                                            <span class="font-semibold">$00.00</span>
+                                        </div>
+                                    </div>
+                                    <button type="button"
+                                        class="hidden peer-hover/cross2:block absolute -top-3 -right-3"><svg
+                                            class="w-7 h-7 text-gray-700" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="container mx-auto border-2 p-4 mt-8 rounded-lg shadow-sm ">
+
+                            <!-- image and heading  -->
+                            <div class="flex lg:flex-row flex-col gap-8">
+                                <div class="flex-none max-w-lg mx-auto">
+                                    <img class="h-full w-full object-cover rounded-lg" src="images/unnamed.png"
+                                        alt="diamond2">
+                                </div>
+                                <!-- col 2 -->
+                                <div class="flex-1 space-y-4 overflow-hidden">
+                                    <header>
+                                        <!-- h2 and remove  -->
+                                        <div class="flex text-gray-600 justify-between gap-3">
+                                            <h2 class="font-medium text-lg">Oval French Cut Halo Engagement Set In 14K
+                                                White Gold With A 1.00 Ct. H-Color VS2-Clarity Emerald Cut Diamond</h2>
+                                            <button type="button" class="flex gap-1" aria-label="rem_ht">
+                                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd"
+                                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                                <span class=" md:block hidden">Remove</span>
+                                            </button>
+                                        </div>
+
+                                        <!-- Item and $1258  -->
+                                        <div class=" flex flex-col gap-1 my-1">
+                                            <span class="text-gray-500">Item#:RB1077-WG14</span>
+                                            <span class="text-2xl font-semibold">$1,258.78</span>
+                                        </div>
+                                    </header>
+                                    <div>
+                                        <!-- Ring Size Quantity and add center store  -->
+                                        <div class="flex gap-8 flex-wrap text-gray-700 text-sm">
+                                            <!-- Ring Size  -->
+                                            <div class="flex flex-col space-y-2">
+                                                <label for="select2" class="font-medium ">Ring size</label>
+                                                <select name="selectt2" class="border-2 p-1 w-52 h-10" id="select2">
+                                                    <option value="selectsize2">Select Size</option>
+                                                    <option value="sm2">Small</option>
+                                                    <option value="md2">Medium</option>
+                                                    <option value="lg2">Large</option>
+                                                </select>
+                                            </div>
+                                            <!-- Quantity  -->
+                                            <div class="space-y-2">
+                                                <label for="plus-minus2" class="font-medium ">Quantity</label>
+                                                <!-- button div  -->
+                                                <div
+                                                    class="flex justify-between items-center gap-3 border-2 w-24 h-10 px-2">
+                                                    <button type="button" aria-label="pl_us2"> <svg class="w-4 h-4"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                            aria-hidden="true">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                d="M19.5 12h-15">
+                                                            </path>
+                                                        </svg></button>
+                                                    <input type="number" value="1" class="w-2" id="plus-minus2">
+                                                    <button type="button" class="sub_2" aria-label="last_na"><svg
+                                                            class="w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                                            <path fill-rule="evenodd"
+                                                                d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+                                                                clip-rule="evenodd"></path>
+                                                        </svg></button>
+                                                </div>
+
+                                            </div>
+                                            <!-- center store  -->
+                                            <fieldset class=" space-y-4">
+                                                <legend class=" font-medium">Would You Like To Add Center Stone?
+                                                </legend>
+                                                <!-- label and radio  -->
+                                                <div class="flex gap-10 mt-3 text-sm font-semibold items-center">
+                                                    <div class="flex items-center gap-1">
+                                                        <input type="radio" class="w-4 h-4 mr-1" name="Center2"
+                                                            id="yes2">
+                                                        <label for="yes2">Yes</label>
+                                                    </div>
+                                                    <div class="flex items-center gap-1">
+                                                        <input type="radio" class="w-4 h-4 mr-1" name="Center2" id="no2"
+                                                            checked>
+                                                        <label for="no2">No</label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <!-- Select Protection Plans  -->
+                                        <fieldset class="mt-5">
+                                            <!-- select protection plan heading and svg  -->
+                                            <legend class="flex gap-1.5">
+                                                <h3 class=" font-semibold text-gray-600">Select Protection Plans</h3>
+                                                <svg class="w-5 h-6 cursor-pointer text-blue-700"
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                                </svg>
+                                            </legend>
+                                            <p class="text-sm mt-1 text-gray-500">Enjoy peace of mind with a Care Plan
+                                                from
+                                                jeweller's
+                                                Mutual</p>
+
+
+                                            <!-- 3 buttons  -->
+                                            <div class="mt-3 flex flex-wrap border md:w-max text-sm">
+                                                <!-- button 1  -->
+                                                <div class="border-b-2 flex w-full 
+                                md:border-r md:flex-1 md:border-b-0">
+                                                    <input type="radio" name="active2" class="hidden peer/blue_1"
+                                                        id="blue_1">
+                                                    <label for="blue_1" class="relative h-10 w-full md:w-44 flex justify-center items-center text-gray-500  
+                     peer-checked/blue_1:bg-blue-600 peer-checked/blue_1:text-white"><svg
+                                                            class="absolute w-4 h-4 text-white left-8 md:left-10"
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                                            fill="currentColor">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                                                fill="currentColor"></path>
+                                                        </svg>No Plan</label>
+
+                                                </div>
+                                                <!-- button 2  -->
+                                                <div class="w-full border-b-2 flex 
+                                md:flex-1 md:border-r md:border-b-0">
+                                                    <input type="radio" name="active2" class="hidden peer/blue_2"
+                                                        id="blue_2" checked>
+                                                    <label for="blue_2" class="relative h-10 w-full md:w-44 flex justify-center items-center  text-gray-500
+                        peer-checked/blue_2:bg-blue-600 peer-checked/blue_2:text-white"><svg
+                                                            class="w-4 h-4 absolute left-8 md:left-2 text-white "
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                                            fill="currentColor">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                                                fill="currentColor"></path>
+                                                        </svg> 3 years <span class="ml-5">$180.00</span></label>
+                                                </div>
+                                                <!-- button 3  -->
+                                                <div class="flex w-full 
+                                md:flex-1">
+                                                    <input type="radio" id="lifetime" name="active2"
+                                                        class="hidden peer/blue_3">
+                                                    <label for="lifetime" class="relative h-10 w-full md:w-44 flex justify-center items-center text-gray-500
+                               peer-checked/blue_3:bg-blue-600 peer-checked/blue_3:text-white"><svg
+                                                            class="w-4 h-4 text-white absolute left-8 md:left-2"
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                                                            fill="currentColor">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M14.707 3L5.5 12.207.293 7 1 6.293l4.5 4.5 8.5-8.5.707.707z"
+                                                                fill="currentColor"></path>
+                                                        </svg>Lifetime <span class="ml-4">$425.00</span></label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+
+                                        <!-- Ucodesoft  -->
+                                        <div class="flex mt-3 items-center text-gray-600 gap-1 text-sm">
+                                            <span class="font-medium">Engraving:</span>
+                                            <span> Script Lettering</span>
+                                            <span class="font-medium">"Ucodesoft" </span>
+                                            <button type="button" name="ucode_button" aria-label="ucode">
+                                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd"
+                                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <span class="md:hidden">false</span>
+                                    </div>
+                                    <!-- matching items  -->
+                                    <article>
+                                        <h3 class=" font-medium text-gray-600 mb-3">Matching Items</h3>
+                                        <div class="relative">
+                                            <div
+                                                class="absolute inset-0 w-7 bg-gradient-to-r from-black/20 to-transparent">
+                                                <button type="button" class="absolute bottom-8 left-1 lg:bottom-12"
+                                                    aria-label="ont">
+                                                    <svg class="w-9 h-9  text-white bg-gray-800 rounded-full"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor">
+                                                        <g>
+                                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                                            <path
+                                                                d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z">
+                                                            </path>
+                                                        </g>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <ul class="flex gap-2 overflow-x-auto">
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Productimage_1"></li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Productimage_2"></li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Productimage_3"></li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Productimage_4"></li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Productimage_5"></li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Productimage_6"></li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Productimage_7"></li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Productimage_8"></li>
+                                                <li class="shrink-0 w-24 h-24"><img src="images/unnamed.png"
+                                                        class="rounded-sm border border-gray-300 w-full h-full object-cover"
+                                                        alt="Productimage_9"></li>
+                                            </ul>
+                                            <div
+                                                class="absolute left-auto inset-0 w-7 bg-gradient-to-l from-black/20 to-transparent">
+                                                <button type="button" class="absolute right-1 bottom-8 lg:bottom-12"
+                                                    aria-label="ont-2">
+                                                    <svg class="w-9 h-9 text-white bg-gray-800 rounded-full"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor">
+                                                        <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <!-- 3 boxes -->
+                            <ul class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-x-8">
+                                <li class="relative">
+                                    <div class=" flex items-start border p-3 justify-between rounded-md peer/cross_2"
+                                        id="cross_2">
+                                        <div class="flex items-center gap-4">
+                                            <!-- img  -->
+                                            <div class="w-16 md:w-20 h-20">
+                                                <img src="images/product-01.jpg" class="w-full h-full object-cover"
+                                                    alt="appraisel-3">
+                                            </div>
+                                            <!-- content  -->
+                                            <div class="flex flex-col gap-2 mt-3">
+                                                <h4 class="text-gray-700 font-medium">Complimentary Appraisal</h4>
+                                                <span class="text-sm text-gray-600">Item #: RB1077-WG14</span>
+                                            </div>
+                                        </div>
+                                        <!-- price  -->
+                                        <div class="mt-3">
+                                            <span class="font-semibold">$00.00</span>
+                                        </div>
+                                    </div>
+                                    <button type="button"
+                                        class="hidden peer-hover/cross_2:block absolute -top-3 -right-3"><svg
+                                            class="w-7 h-7 text-gray-700" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+
+                                </li>
+
+                                <li class="relative">
+                                    <div class=" flex items-start border p-3 justify-between rounded-md peer/cross_3"
+                                        id="cross_3">
+                                        <div class="flex items-center gap-4">
+                                            <!-- img  -->
+                                            <div class="w-16 md:w-20 h-20">
+                                                <img src="images/product-01.jpg" class="h-full w-full object-cover"
+                                                    alt="appraisel-4">
+                                            </div>
+                                            <!-- content  -->
+                                            <div class="flex flex-col gap-2 mt-3">
+                                                <h4 class="text-gray-700 font-medium">Complimentary Appraisal</h4>
+                                                <span class="text-sm text-gray-600">Item #: RB1077-WG14</span>
+                                            </div>
+                                        </div>
+                                        <!-- price  -->
+                                        <div class="mt-3">
+                                            <span class="font-semibold">$00.00</span>
+                                        </div>
+                                    </div>
+                                    <button type="button"
+                                        class="hidden peer-hover/cross_3:block absolute -top-3 -right-3"><svg
+                                            class="w-7 h-7 text-gray-700" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+
+                                </li>
+                                <li class="relative">
+                                    <div class=" flex items-start border p-3 justify-between rounded-md peer/cross_4"
+                                        id="cross_4">
+                                        <div class="flex items-center gap-4">
+                                            <!-- img  -->
+                                            <div class="w-16 md:w-20 h-20">
+                                                <img src="images/product-01.jpg" class="w-full h-full object-cover"
+                                                    alt="appraisel-5">
+                                            </div>
+                                            <!-- content  -->
+                                            <div class="flex flex-col flex-wrap gap-2 mt-3">
+                                                <h4 class="text-gray-700 font-medium">Complimentary Appraisal</h4>
+                                                <span class="text-sm text-gray-600">Item #: RB1077-WG14</span>
+                                            </div>
+                                        </div>
+                                        <!-- price  -->
+                                        <div class="mt-3">
+                                            <span class="font-semibold">$00.00</span>
+                                        </div>
+                                    </div>
+                                    <button type="button"
+                                        class="hidden peer-hover/cross_4:block absolute -top-3 -right-3"><svg
+                                            class="w-7 h-7 text-gray-700" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z"
+                                                clip-rule="evenodd"></path>
+                                        </svg></button>
+
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                </ul>
+                <!-- special instructions  -->
+                <article
+                    class="container mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-20 gap-10 mt-10 border-2 rounded-lg py-7 px-5">
+                    <!-- col 1  -->
+                    <div>
+                        <label for="text_area" class="text-xl font-semibold">Special
+                            Instructions</label>
+                        <textarea name="text_ar" id="text_area" cols="10" rows="5"
+                            class="block mt-3 border-2 rounded-md py-4 px-6 font-medium resize-none w-full text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rerum, sapiente, perferendis alias excepturi mollitia ratione reiciendis suscipit harum sit non at quia similique fugiat ex quibusdam voluptatum, modi molestias.</textarea>
+
+                        <h3 class="text-xl mt-6 font-semibold">Shipping</h3>
+                        <dl class="flex md:flex-row flex-col justify-between md:items-center">
+                            <div class="mt-4 flex flex-col">
+                                <dt class="text-gray-600">Estimated shipping Date</dt>
+                                <dd><time datetime="2023-08-11" class="font-semibold text-lg text-gray-600">Friday,
+                                        August 11,
+                                        2023</time></dd>
+                            </div>
+                            <div class="mt-4 flex flex-col">
+                                <dt class="text-gray-600">Shipping Method</dt>
+                                <dd class="font-semibold text-lg text-gray-600">Free FedEx Overnigh</dd>
+                            </div>
+                        </dl>
+                        <div class="p-4 border rounded-md mt-5 w-full bg-gray-50 text-gray-800 text-sm">
+                            <address class="not-italic text-gray-600">
+                                For Saturday delivery, please contact customer service at <a href="tel:+8776275094"
+                                    class="font-semibold text-black">877-627-5094</a>.
+                                APO/FPO orders
+                                will
+                                ship
+                                via USPS
+                                Priority Mail.
+                            </address>
+                            <div class="flex md:flex-row flex-col gap-2 justify-between mt-3">
+                                <p class="text-gray-600">View our <a href="/"
+                                        class="text-blue-700 font-semibold underline">Shipping Policy and Expedite
+                                        Option</a></p>
+                                <p>For phone orders please mention: <span
+                                        class="text-black font-semibold">QFPHUG3</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col 2  -->
+                    <div class="flex flex-col justify-between gap-5">
+                        <dl class="flex flex-col">
+                            <div class="px-1 pb-5 flex justify-between border-b-2 items-center">
+                                <dt class="text-gray-600">Subtotal</dt>
+                                <dd class="font-semibold text-xl">$5,364.75</dd>
+                            </div>
+                            <div class="px-1 py-5 flex justify-between border-b-2 items-center">
+                                <dt class="text-gray-600">Shipping</dt>
+                                <dd class="font-semibold text-xl">Free</dd>
+                            </div>
+                            <div class="px-1 py-5 flex justify-between items-center">
+                                <dt class="text-gray-600">Total Payable</dt>
+                                <dd class="font-semibold text-xl">$5,364.75</dd>
+                            </div>
+                        </dl>
+                        <div class=" flex flex-col gap-5 ">
+                            <label for="coup" id="coupon" class="text-sm text-gray-600">Coupon code</label>
+                            <div class="relative w-full">
+                                <input type="text" id="coup" placeholder="Enter code"
+                                    class="w-full border-2 p-4 pr-24 rounded-lg">
+                                <button type="button" aria-label="app_ly"
+                                    class="absolute font-semibold right-10 bottom-4 text-blue-700">Apply</button>
+                            </div>
+                            <button aria-label="cont_nure"
+                                class="bg-blue-700 p-4 text-white text-xl font-medium rounded-md">Continue</button>
+                        </div>
+                    </div>
+                </article>
+            </form>
+        </div>
+
+        <!-- Payment choices with flexibility  -->
+        <section class="container mx-auto mt-16">
+            <h2 class="text-center mb-8 text-lg font-semibold">Payment Choices with Flexibility</h2>
+            <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 items-end gap-6 px-12">
+                <li>
+                    <figure class="flex flex-col items-center gap-4">
+                        <div class="w-24 h-16">
+                            <img src="images/Adiamor/image40.png" class="w-full h-full object-cover" alt="debit">
+                        </div>
+                        <figcaption class="text-gray-500">Debit or Credit Card</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="flex flex-col items-center gap-4">
+                        <div class="w-32 h-16">
+                            <img src="images/Adiamor/image39.png" class="h-full w-full object-cover" alt="paypal">
+                        </div>
+                        <figcaption class="text-gray-500">Paypal</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="flex flex-col items-center gap-4">
+                        <div class="w-30 h-16">
+                            <img src="images/Adiamor/image43.png" class="h-full w-full object-cover" alt="split">
+                        </div>
+                        <figcaption class="text-gray-500">Split Day</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="flex flex-col items-center gap-4">
+                        <div class="w-30 h-16">
+                            <img src="images/Adiamor/image41.png" class="h-full w-full object-cover" alt="fincancing">
+                        </div>
+                        <figcaption class="text-gray-500">Financing with affirm</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="flex flex-col items-center gap-4">
+                        <div class="w-24 h-20">
+                            <img src="images/Adiamor/image42.png" class="h-full w-full object-cover" alt="wire">
+                        </div>
+                        <figcaption class="text-gray-500">Wire transfer</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="flex flex-col items-center gap-4">
+                        <div class="w-20 h-20">
+                            <img src="images/Adiamor/image45.png" class="h-full w-full object-cover" alt="by_phone">
+                        </div>
+                        <figcaption class="text-gray-500">Pay By Phone</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Keep Your Jewellery sparkling and Safe. -->
+        <section class=" pt-10 border-t-2 border-gray-200 pb-32 mt-14 bg-gray-50">
+            <div class="container mx-auto px-10  md:px-20">
+                <h3 class="md:text-xl font-semibold">Keep Your Jewellery sparkling and Safe.</h3>
+                <p class="text-sm text-gray-600">Adiamor offers care plans and cleaners to offer you peace of mind when
+                    making your purchase</p>
+                <!-- button and explore -->
+                <div class="my-10 gap-4 flex flex-col md:flex-row md:justify-between md:items-center">
+                    <a href="#" class="bg-blue-600 text-white py-3 px-7 font-medium w-max">Purchase a Care plan</a>
+                    <a href="#" class="text-blue-600 underline underline-offset-4 font-semibold">Explore All</a>
+                </div>
+                <ul class="flex flex-wrap justify-around mt-8  gap-12">
+                    <li class="flex flex-col items-center gap-2">
+                        <img src="images/ac.webp" alt="im" class="border w-24 h-24 object-cover">
+                        <p class="text-center ">Foaming Cleaner</p>
+                        <p class="font-semibold">$12.00</p>
+                        <button type="button" aria-label="add_cart"
+                            class="border-2 py-1.5 px-6 text-blue-600 font-medium border-blue-600 rounded-md">Add to
+                            cart</button>
+                    </li>
+                    <li class="flex flex-col items-center gap-2">
+                        <div>
+                            <img src="images/ac.webp" alt="im-1" class="border w-24 h-24 object-cover">
+                        </div>
+                        <p class="text-center text-sm font-medium">Foaming Cleaner</p>
+                        <p class="font-semibold">$12.00</p>
+                        <button type="button" aria-label="add_cart2"
+                            class="border-2 py-1.5 px-6 text-blue-600 font-medium border-blue-600 rounded-md">Add to
+                            cart</button>
+                    </li>
+                    <li class="flex flex-col items-center gap-2">
+                        <img src="images/ac.webp" alt="im-2" class="border w-24 h-24 object-cover">
+                        <p class="text-center text-sm font-medium">Foaming Cleaner</p>
+                        <p class="font-semibold">$12.00</p>
+                        <button type="button" aria-label="add_cart3"
+                            class="border-2 py-1.5 px-6 text-blue-600 font-medium border-blue-600 rounded-md">Add to
+                            cart</button>
+                    </li>
+                    <li class="flex flex-col items-center gap-2">
+                        <img src="images/ac.webp" alt="im-3" class="border w-24 h-24 object-cover">
+                        <p class="text-center text-sm font-medium">Foaming Cleaner</p>
+                        <p class="font-semibold">$12.00</p>
+                        <button type="button" aria-label="add_cart4"
+                            class="border-2 py-1.5 px-6 text-blue-600 font-medium border-blue-600 rounded-md">Add to
+                            cart</button>
+                    </li>
+                    <li class="flex flex-col items-center gap-2">
+                        <img src="images/ac.webp" alt="im-4" class="border w-24 h-24 object-cover">
+                        <p class="text-center text-sm font-medium">Foaming Cleaner</p>
+                        <p class="font-semibold">$12.00</p>
+                        <button type="button" aria-label="add_cart5"
+                            class="border-2 py-1.5 px-6 text-blue-600 font-medium border-blue-600 rounded-md">Add to
+                            cart</button>
+                    </li>
+                    <li class="flex flex-col items-center gap-2">
+                        <img src="images/ac.webp" alt="im-5" class="border w-24 h-24 object-cover">
+                        <p class="text-center text-sm font-medium">Foaming Cleaner</p>
+                        <p class="font-semibold">$12.00</p>
+                        <button type="button" aria-label="add_cart6"
+                            class="border-2 py-1.5 px-6 text-blue-600 font-medium border-blue-600 rounded-md">Add to
+                            cart</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- modal box  -->
+    <div class="hidden fixed z-20 inset-0 bg-black/50 top-0 left-0 w-full ">
+        <section class="w-full h-full relative overflow-auto ">
+
+            <div
+                class="absolute top-0 left-0 md:left-1/2 md:-translate-x-1/2 md:top-1/2 md:-translate-y-1/2 bg-white w-full md:w-3/4  lg:w-2/4 px-5 py-8">
+                <button type="button" class=" absolute right-2 top-3" aria-label="dont"><svg class="w-5 h-5"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor">
+                        <path
+                            d="M3.64 2.27L7.5 6.13L11.34 2.29C11.5114 2.1076 11.7497 2.0029 12 2C12.5523 2 13 2.4477 13 3C13.0047 3.2478 12.907 3.4866 12.73 3.66L8.84 7.5L12.73 11.39C12.8948 11.5512 12.9915 11.7696 13 12C13 12.5523 12.5523 13 12 13C11.7423 13.0107 11.492 12.9127 11.31 12.73L7.5 8.87L3.65 12.72C3.4793 12.8963 3.2453 12.9971 3 13C2.4477 13 2 12.5523 2 12C1.9953 11.7522 2.093 11.5134 2.27 11.34L6.16 7.5L2.27 3.61C2.1052 3.4488 2.0085 3.2304 2 3C2 2.4477 2.4477 2 3 2C3.2404 2.0029 3.4701 2.0998 3.64 2.27Z">
+                        </path>
+                    </svg></button>
+                <h2 class="text-center text-2xl  md:mt-0 font-semibold text-gray-500 uppercase">
+                    Engrave Your Ring</h2>
+                <div class="flex justify-center px-8 mt-6">
+                    <p class="text-center text-gray-500">You can choose between our standard block font or a script font
+                        as shown
+                        here and enter your text below. For engravings of more than fourteen charachters, discuss with
+                        customer service after completing your order</p>
+                </div>
+                <!-- image and text  -->
+                <div class="grid grid-cols-1 md:grid-cols-2 mt-6 gap-10 md:gap-24 pb-10">
+                    <div class="h-60 w-72 mx-auto">
+                        <img class=" h-full w-full  object-contain" src="images/Whats.jpeg" alt="unname">
+                        <div class="relative font-medium text-lg">
+
+                            <span class="absolute bottom-[3.6rem] left-24 transform rotate-6">S</span>
+                            <span class="absolute bottom-[3.5rem] left-[6.8rem] text transform rotate-6">U</span>
+                            <span class="absolute bottom-[3.5rem] left-[7.7rem] rotate-3">K</span>
+                            <span class="absolute bottom-[3.5rem] left-[8.5rem] ">H</span>
+                            <span class="absolute bottom-[3.5rem] left-[9.4rem] -rotate-2">P</span>
+                            <span class="absolute bottom-[3.5rem] left-[10.1rem] -rotate-3">A</span>
+                            <span class="absolute bottom-[3.5rem] left-44 -rotate-6">L</span>
+                        </div>
+                    </div>
+                    <form action="/">
+                        <div class="flex flex-col ">
+                            <label for="en_grave_text" class="text-gray-500 ">Engraving Text</label>
+                            <input type="text" placeholder="Enter Text" id="en_grave_text"
+                                class="mt-2 placeholder:text-gray-600 w-full p-2 border">
+                        </div>
+
+                        <div class="my-6 grid md:grid-cols-2 border border-black text-sm">
+                            <!-- button 1  -->
+                            <div class="border-b-2 border-black flex 
+        md:border-r md:border-b-0">
+                                <input type="radio" name="activa" class="hidden peer/blu" id="block_blue" checked>
+                                <label for="block_blue" class="relative font-medium  h-9 w-full flex justify-center items-center text-gray-600  
+peer-checked/blu:bg-blue-600 peer-checked/blu:text-white ">BLOCK</label>
+                            </div>
+
+                            <!-- button 2  -->
+                            <div class="w-full border-black flex 
+        md:flex-1  md:border-b-0">
+                                <input type="radio" name="activa" class="hidden peer/balu" id="script_blue">
+                                <label for="script_blue" class="relative h-9 w-full font-medium flex justify-center items-center  text-gray-600
+peer-checked/balu:bg-blue-600 peer-checked/balu:text-white">SCRIPT</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="bg-blue-600 text-white font-medium w-full py-3 rounded-md"
+                            aria-label="sub_mit">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
